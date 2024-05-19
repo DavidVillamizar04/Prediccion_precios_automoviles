@@ -8,7 +8,7 @@
 
 ​Hemos sido contratados en el equipo de ciencias de datos en una consultora de renombre. Nos han asignado a un proyecto de estudio de mercado de una importante automotriz china. Nuestro cliente desea ingresar a nuestro mercado de automóviles, por lo que nos han encomendado analizar las características de los vehículos presentes en el mercado actual. Dado que tienen en su catálogo una amplia colección de modelos de todo tipo, cuyo catálogo está estratificado en gamas según el gusto de cada región, desean saber qué características presentan los vehículos de gama alta y los de gama baja en nuestro mercado, para poder abarcar todo los públicos objetivos ajustándose a toda la demanda y, en base a estos datos, poder cotizar correctamente los vehículos que ofrecerá.
 
-# Desarrollo 
+# EDA (Analisis exploratorio de los datos)
 
 Como primer paso realizamos una analisis del data set, buscando que este equilibrado, que no tenga valores faltantes o que no tenga algun valor atipico, y notamos que todos los datos estan bien.
 
@@ -21,3 +21,27 @@ Graficando este histograma notamos que la mayoria de autos son de bajo precio en
 Despues realizamos una matriz de correlacion para analizar que aspectos influyen mas con respecto al precio del automovil.
 
 # ![alt text](Imagenes/Matriz-correlacion.png)
+
+Vemos por medio de un grafico de dispersion el comportamiento de las tres variables que tuvieron mas correlacion con respecto al precio
+
+# ![alt text](Imagenes/Dispersion.png)
+
+# Modelado de ML
+
+Teniendo en cuenta el analisis anterior se usaran las caracteristicas que mas correlacion tuvieron con respecto a este, y se aplicara un Random Forest para predecir los precios de los vehiculos.
+
+Como primer paso escalamos los datos parra entrenar el modelo
+
+# ![alt text](Imagenes/Datos%20escalados.png)
+
+Despues de escalados entrenamos el modelo
+
+# ![alt text](Imagenes/Modelo%20entrenado.png)
+
+Analizamos su presicion de predicicon
+
+# ![alt text](Imagenes/Presicion.png)
+
+Se concluye que el modelo tiene un buen rendimiento y que da buenas predicciones de a cuerdo con los datos reales
+
+![alt text](Imagenes/Predicciones.png)
