@@ -38,7 +38,7 @@ Despues de escalados entrenamos el modelo
 
 # ![alt text](Imagenes/Modelo%20entrenado.png)
 
-Analizamos su presicion de predicicon
+Analizamos su presicion de prediccion
 
 # ![alt text](Imagenes/Presicion.png)
 
